@@ -1,0 +1,19 @@
+version: '2'
+services:
+  app:
+    build:
+      context: ./
+      dockerfile: ./DockerFile
+    ports:
+     - "5000:5000"
+    links:
+     - mongo
+    depends_on:
+     - mongo
+    volumes:
+     - .:/todo
+  mongo:
+    image: "mongo:latest"
+    ports:
+     - "27017:27017"
+    command: mongod --port 27017 --bind_ip 0.0.0.0

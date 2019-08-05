@@ -1,0 +1,6 @@
+Flask
+PyMongo
+pandas
+altair
+Pillow
+flask_pymongo
