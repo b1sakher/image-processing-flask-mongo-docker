@@ -23,6 +23,6 @@ This python script demonstrate a pipline running on a Docker container of gather
 ---
 
 ## TODO:
-Update script to run in asynchronous mode 
-
+- Update script to run in asynchronous mode 
+- Upload Docker Image into DockerHub and use it directly
 ---
